@@ -7,6 +7,3 @@
 As of writing this I still haven't been able to pass Test 55. I wasn't able to type the
 whole cmd prompt in order to output the result into a file to check the difference so I
 have been unable to figure out what is going wrong with my translate function to solve it.
-
-On the bright side of things, when this is officially turned in at midnight, it will be my
-birthday. So as my Birthday Gift to myself, I won't have to stress about this code :)
