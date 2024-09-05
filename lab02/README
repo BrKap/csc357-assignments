@@ -1,0 +1,58 @@
+- Brian Kaplan (bhkaplan)
+- use make file to compile, and run with input file piped in
+- N/A
+
+1.)
+	a) char *cp;
+	b) char arr[5];
+	   char *ap = arr;
+	c) int x;
+	   int *y = &x;
+	   int **pp = &y
+
+2.)
+	I think you can point a pointer to itself by
+	int *a = (int*)&a
+	but honestly why you would do this I have no idea.
+	I'm also not 100% sure about typecasting it, I just did it
+	because it seems like the compiler might complain otherwise.
+
+3.)
+	The fundamental problem is that it is checking if the pointer
+	p is != to '\0' and not the actual value of p. This will probably
+	continue for quite some time until the pointer itself becomes '\0'
+	To fix this we should change it to *p != '\0'
+
+4.)
+	a) An array just points to the location of its 0 index. Meaning we can rewrite
+	arr[0] as *(arr + 0) so that wew can perform the same operation as arr[5]
+	being equal to *(arr + 5)
+
+	b) While the above is true, an array *should* be holding
+	multiple data points that make up the structure of an array.
+	This is fixed in size and type and allocated statically in
+	memory. The intial array pointer cannot be changed as it is
+	static. Meanwhile pointers can absolutely change their value
+	because they are dynamic. The difference is mostly how they are
+	stored in memory and what they represent.
+
+
+5.)	perror is defined wit const because the error message should not be
+	mutated by the function at all and be used as the error message
+	On the otherhand, strerror is mutable because it uses the errnum in
+	the function itself and uses that to map into an error message
+	string and finally return a pointer to the string.
+
+6.)
+	Since there are 31,536,000 seconds in a year, a signed 32 bit integer
+	would go up to +-2,147,483,648. Dividing into that gets us about 68 years.
+	Which would be about 2038. To fix this we could use a larger data type
+	64 bits. We could also modify the start time from instead of 1970
+	we could use a more recent date such as when 2030 comes along. These strategies
+	should be compatible with existing applications as changing the data type to 64 bits
+	just means allocating more space for the int in memory and changing the start time is
+	just modifying the it in memory as well.
+
+7.)
+	The data type of size_t is a byte. (At least thats what I found in "man 3 malloc")
+	It is located in the header file <stdlib.h>

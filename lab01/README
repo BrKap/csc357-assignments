@@ -1,0 +1,7 @@
+- Brian Kaplan (bhkaplan)
+- Just compile and run
+1. I chose unix3 because I went in order and unix1 and unix2 took several minutes to connect while unix3 connected within seconds. I didn't try the other ones yet. (Note I am using vpn)
+2. I choose to read the intro as it gave me the useful information of how to even navigate using cd, ls, etc. It also gave me information on how to find my current location and print that with pwd and also creating directories with mkdir
+I was able to create a new folder under coursework for csc357 and make a lab01 where I stored this file along with my HelloWorld.c
+3. I chose Vim because last quarter a friend of mine showed me how to use it so it was familiar and easy to use.
+4. My program just prints Hello World. The only problem I had while developing it is getting used to the editor style. While I can use Vim, I am very slow at it and don't know everything about it.

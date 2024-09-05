@@ -1,0 +1,12 @@
+- Brian Kaplan (bhkaplan)
+- run "./xlat" to see usage message.
+ -d with 1 set of chars for delete mode
+ -d and -c with 1 set of chars for complement mode
+ 2 sets of chars for translation mode
+- I struggled the most with making the test cases work with the allchars file.
+As of writing this I still haven't been able to pass Test 55. I wasn't able to type the
+whole cmd prompt in order to output the result into a file to check the difference so I
+have been unable to figure out what is going wrong with my translate function to solve it.
+
+On the bright side of things, when this is officially turned in at midnight, it will be my
+birthday. So as my Birthday Gift to myself, I won't have to stress about this code :)

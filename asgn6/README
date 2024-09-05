@@ -1,0 +1,13 @@
+- Brian Kaplan (bhkaplan)
+- Compile and follow usage message
+- My goodness this took a lot longer than it should have for me.
+I finally figured out why the pipeline was not working properly.
+I had just copy pasted the struct pipeline and struct clstage from
+the assignment details. However, this was causing problems and once
+I decided to just remove that everything worked fine. It's a
+wonder how the compiler wasn't complaining about double definitions.
+The reason why the print_pipeline worked, was because it was using
+the correct structs for both while my functions was using the structs
+I copy pasted. So at the end of the day, my function to setup and execute
+the pipeline was correct, I had just been using a bogus pipeline
+definition which screwed up the whole thing. At least it's done now

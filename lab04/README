@@ -1,0 +1,19 @@
+- Brian Kaplan (bhkaplan)
+
+- Problem 1: Fixing expressions I got wrong
+
+1. B / A
+   2 / 3 = 0
+   I accidentally did A / B on the test
+
+2. (int)&grade[4] = (int)&grade[0]
+	16 - 0 = 16
+	I did 4 - 0 on the test, but casting to int causes
+	the address counting to be by 4 instead of 1 for each address
+
+3. (A=1)?B:A
+   A is set to 1 so the expression is always true
+   Result is B which is 2
+
+- Problem 5: Answered in problem5.c
+- Problem 5: Answered in problem6.c 
